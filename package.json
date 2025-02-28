@@ -4,7 +4,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf docs",
     "build": "npm run clean && parcel build --dist-dir docs --public-url /Parcel/"
   },
   "devDependencies": {
