@@ -1,0 +1,2 @@
+body{cursor:none;overflow:hidden}.cursor{opacity:0;background-color:#00000094;border-radius:50%;width:100px;height:100px;animation:.5s infinite cursor;position:absolute}@keyframes cursor{0%{box-shadow:0 0 4px 10px #00f}to{box-shadow:0 0 4px 10px #4392a9}}.cursor-fade{animation-name:fade;animation-duration:2s;animation-delay:1s}@keyframes fade{0%{opacity:1}to{opacity:0;background-color:#fff}}
+/*# sourceMappingURL=index.2db4f3bb.css.map */
