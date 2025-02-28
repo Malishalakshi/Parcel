@@ -84,18 +84,15 @@ addEventListener('mousemove', (e)=>{
 addEventListener('mouseout', ()=>{
     cursorElm.style.opacity = '0';
 });
-addEventListener('touchstart',()=>{
-    cursorElm.style.opacity = '1';
-});
 addEventListener('touchmove',(e) =>{
     if(timeOut) clearTimeout(timeOut);
     cursorElm.style.opacity = '1';
-    cursorElm.style.left = `${e.clientX - cursorElm.offsetWidth / 2}px`;
-    cursorElm.style.top = `${e.clientY - cursorElm.offsetHeight / 2}px`;
+    cursorElm.style.left = `${e.changedTouches[0].clientX - cursorElm.offsetWidth / 2}px`;
+    cursorElm.style.top = `${e.changedTouches[0].clientY - cursorElm.offsetHeight / 2}px`;
     setTimeout(() => {
         cursorElm.style.opacity = '0';
     },2000);
 });
 addEventListener('touchend',(e) =>{
-    cursorElm.style.opacity = '1';
+    cursorElm.style.opacity = '0';
 });
